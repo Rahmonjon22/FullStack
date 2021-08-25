@@ -43,16 +43,3 @@ export const createPost = (newPost) => axios.post(url, newPost);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
