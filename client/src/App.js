@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
-import camera from "./Images/camera.png";
+import camera from "./images/camera.png";
 
 import AllPosts from "./components/Posts/AllPosts";
 import Form from "./components/Form/Form";
@@ -12,11 +12,7 @@ import useStyles from "./stylesApp";
 import { getPosts } from "./actions/postsActions";
 
 const App = () => {
-  const [currentID, setCurrentId] = useState(null);
-
-
-
-
+  const [currentId, setCurrentId] = useState(null);
 
   const classes = useStyles();
   const dispatch = useDispatch();
@@ -47,7 +43,7 @@ const App = () => {
             </Grid>
 
             <Grid item xs={12} sm={4}>
-              <Form currentID={currentID} setCurrentId={setCurrentId} />
+              <Form currentId={currentId} setCurrentId={setCurrentId} />
             </Grid>
           </Grid>
         </Container>
